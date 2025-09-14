@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+</head>
+
+<body style="background-color:beige;">
+    <center>
+        <h1><U>TABLE</U></h1>
+    </center><br>
+    <dt><b>Defination:</b></dt>
+    <dd>
+        In HTML, the table tag is used to create a table for displaying data in rows and columns.
+        It is made up of rows tr and cells, which can be headers th or data td.
+        Tables can also include thead, tbody, and tfoot for better structure.
+        Attributes like border, cellspacing, and cellpadding (now mostly done with CSS) control appearance.
+        Tables are commonly used for tabular data, not for page layout in modern web design.
+    </dd>
+    <h4>Table tags:</h4>
+    <ul>
+        <li><b>Table:</b> Defines the main table structure. It acts as a container for all table elements.</li>
+        <li><b>tr:</b> Stands for "table row" and defines a row in the table.</li>
+        <li><b>th:</b> Table header cell. It is bold and centered by default. Used for headings.</li>
+        <li><b>td:</b> Table data cell. Contains regular content in a row.</li>
+        <li><b>thead:</b> Groups the header content (tr with th) in a table.</li>
+        <li><b>tbody:</b>Groups the main body content of the table.</li>
+        <li><b>tfoot:</b> Groups footer content (like totals) in a table.</li>
+        <li><b>caption:</b> Adds a title or description above the table.</li>
+        <li><b>col:</b>Specifies column properties, used inside colgroup.</li>
+        <li><b>colgroup:</b> Groups one or more columns to apply common styles or settings.</li>
+    </ul>
+
+    <center>
+        <h1>Day6</h1>
+        <h2>Assignments</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th rowspan="3">Day</th>
+                    <th colspan="3">Seminar</th>
+                    <!-- <th></th>
+                    <th></th> -->
+                </tr>
+                <tr>
+                    <!-- <th></th> -->
+                    <th colspan="2">Schedule</th>
+                    <!-- <th></th> -->
+                    <th rowspan="2">Topic</th>
+                </tr>
+                <tr>
+                    <!-- <th></th> -->
+                    <th>Begin</th>
+                    <th>End</th>
+                    <!-- <th></th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Monday</td>
+                    <td rowspan="2">8:00 a.m.</td>
+                    <td rowspan="2">5:00 p.m.</td>
+                    <td>introduction to XML</td>
+                </tr>
+                <tr>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                    <td>Validity:DTD and Relax NG</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Tuesday</td>
+                    <td>8:00 a.m.</td>
+                    <td>11:00 a.m.</td>
+                    <td rowspan="2">Xpath</td>
+                </tr>
+                <tr>
+                    <!-- <td></td> -->
+                    <td>11:00 a.m.</td>
+                    <td>2:00 p.m.</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <!-- <td></td> -->
+                    <td>2:00 p.m.</td>
+                    <td>5:00 p.m.</td>
+                    <td>XSL Transformation</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:00 a.m.</td>
+                    <td>12:00 p.m.</td>
+                    <td>XSL Formatting objects</td>
+                </tr>
+            </tbody>
+        </table><br><br><br><br>
+        <table border="2" height="150" width="400">
+            <thead>
+                <tr>
+                    <th>Device</th>
+                    <th>Brand</th>
+                    <th>Specifications</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td rowspan="">Smartphone</td>
+                    <td rowspan="">Apple</td>
+                    <td rowspan="">
+                        <table border="2" width="300">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Storage</th>
+                                </tr>
+                            </thead>
+                            <tbody align="center">
+                                <tr>
+                                    <td>iphone 12 pro</td>
+                                    <td>256GB</td>
+                                </tr>
+                                <tr>
+                                    <td>iphone SE</td>
+                                    <td>128GB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Laptop</td>
+                    <td>HP</td>
+                    <td>15.6"Display</td>
+                </tr>
+                <tr>
+                    <td>Tablet</td>
+                    <td>samsung</td>
+                    <td>10.5"Display</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br>
+        <h2>Time Table</h2>
+        <table border="2" height="100" width="600">
+            <thead>
+                <tr>
+                    <th>Day/Period</th>
+                    <th>I<br>9:30-<br>10:20</th>
+                    <th>II<br>10:20-<br>11:10</th>
+                    <th>III<br>12:00-<br>12:40</th>
+                    <th>12:00-<br>12:40</th>
+                    <th>IV<br>12:20-<br>1:10</th>
+                    <th>V<br>1:20-<br>2:10</th>
+                    <th>VI<br>2:20-<br>3:10</th>
+                    <th>VII<br>3:20-<br>4:10</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>Monday</td>
+                    <td>Eng</td>
+                    <td>Mat</td>
+                    <td>Che</td>
+                    <td rowspan="5">Lunch</td>
+                    <td colspan="3">LAB</td>
+                    <!-- <td></td>
+                <td></td> -->
+                    <td>Phy</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="3">LAB</td>
+                    <!-- <td></td>
+                <td></td>
+                <td></td> -->
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td>SPORTS</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Mat</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <!-- <td></td> -->
+                    <td>Che</td>
+                    <td colspan="3">LIBRARY</td>
+
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <!-- <td></td> -->
+                    <td colspan="3">LAB</td>
+                    <!-- <td></td>
+                <td></td> -->
+                    <td>Mat</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <!-- <td></td> -->
+                    <td colspan="3">LAB</td>
+                    <!-- <td></td>
+                <td></td> -->
+                    <td>Mat</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+
+</html>
